@@ -24,6 +24,9 @@ main{
     border-radius: 20px;
     margin-top: 50px;
 }
+/********************
+                MEDI QUERIE Start
+*********************/
 
 .content{
     color: white;
@@ -41,6 +44,8 @@ main{
     margin-bottom: 30px;
     font-weight: 400px;
 }
+
+
 
 .btn{
     font-size: 20px;
@@ -170,6 +175,10 @@ main{
     margin-bottom: 25px;
 }
 
+.view-all-btn{
+    display: none;
+}
+
 /************Footer********************/
 footer{
     margin-top: 120px;
@@ -199,7 +208,6 @@ footer ul a{
     margin-left: 40px;
     color: white;
     font-size: 16px;
-    
 }
 
 .social-icon{
@@ -211,3 +219,196 @@ footer ul a{
     font-size: 20px;
 }
 /***********Footer End*************/
+
+
+/***********Mobile Device- 576px*************/
+@media screen and (max-width: 576px) {
+    
+    main{
+        width: 576px;
+    }
+    body{
+        width: 576px;
+        margin: 0 px auto;
+    }
+    .header-section{
+        width: 576px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;  
+    }
+
+    .header-img{
+        margin-top: 0px;
+    }
+    .header-img img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .content{
+        text-align: center;
+    }
+    
+    .header-title h1{
+    font-size: 30px;
+    font-weight: 700;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .middle-section{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 125px;
+        margin-bottom: 50px;
+    }
+    .side-bar{
+        width: 300px;
+        height:300px;
+        position: relative;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .blog-section{
+        width: 290px;
+    }
+    .description{
+        margin-right: 5px;
+    }.footer-nav{
+        width:
+    }
+
+    footer ul a{
+        margin-left: 5px;
+    }
+
+    #hide-me{
+        display: none;
+    }
+    footer{
+        
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 450px; 
+    }
+
+    .footer-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/**********End Mobile Device**********/
+
+/*********** Tab  577-992px *************/
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    main{
+        width: 920px;
+        margin-right: 0px;
+    }
+    body{
+        width: 920px;
+        margin: 0px auto;
+    }
+
+    .header-section{
+        width: 920px;
+        height: auto;
+    }
+
+    .header-img img{
+        width: 300px;
+        margin-top: 115px;
+        margin-bottom: -7px;
+    }
+
+    .container{
+        width: 920px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .middle-section{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .side-bar{
+        width: 920px;
+        height: 90px;
+        background: white;
+        margin-bottom: 20px;
+    }
+
+    .side-bar ul{
+        display: flex;
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .side-bar ul a{
+        padding: 5px 10px;
+    }
+
+    .side-bar .upcoming-match{
+        padding: 10px 20px;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    
+    .side-bar .all-group{
+        padding: 10px 61px;
+        background-color: white;
+        border: 1px solid gray;
+    }
+
+    .side-bar .blog {
+        padding: 10px 85px;
+        background-color: #DD0000;
+        border: 1px solid gray;
+    }
+    .blog-section{
+        width: 290px;
+    }
+
+    #hide-me{
+        display: none;
+    }
+
+    .view-all-btn{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .view-all button{
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #DD0000;
+        color: white;
+    }
+
+    .view-all{
+        display: flex;
+        justify-content: center;
+        margin-left: 300px;
+    }
+
+}
