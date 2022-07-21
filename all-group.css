@@ -1,0 +1,409 @@
+/*--------------------
+               Gooogle Font: Poppins(400+700)
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*---------END--------*/
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 1200px;
+    margin: 0px auto;
+}
+/*--------------------
+               Header Section Start
+--------------------*/
+.header-section{
+    width: 100%;
+    height: 420px;
+    background-color: #161616;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+/********************
+                MEDI QUERIE Start
+*********************/
+
+.content{
+    color: white;
+    width: 50%;
+    margin: 50px 50px 50px 100px;
+}
+.header-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.header-par{
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: 400px;
+}
+
+
+
+.btn{
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #DD0000;
+    
+ }
+
+@keyframes sliding{
+    from{
+        background-color: white;
+        color: orangered;
+        border:1px solid orangered;
+    }
+    to{
+        background-color: orangered;
+        color: white;
+        border:1px solid white;     
+    }
+}
+
+.btn:hover{
+    transition: .1s;
+    animation: sliding 1s ease-in-out 0.1s infinite alternate-reverse;
+    animation-play-state: running;
+}
+.header-img{
+    width: 50%;
+    margin-top: 80px;
+}
+
+/*--------------------
+               MIddle Section Start
+--------------------*/
+
+.middle-section{
+    display: flex;
+    margin-top: 100px;
+}
+
+.side-bar{
+    width: 300px;
+    height:300px;
+    background-color: #161616;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.side-bar ul{
+    list-style: none;
+    margin-top: 60px;
+}
+
+.side-bar ul li{
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.side-bar ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.upcoming-match{
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.all-group{
+    padding: 10px 61px;
+    background-color: #DD0000;
+}
+
+.blog{
+    padding: 10px 85px;
+    background-color: white;
+}
+
+/******  end ******/
+
+.container{
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.blog-section{
+    text-align: center;
+}
+
+.blog-img img{
+    width: 350px;
+    height: 350px;
+}
+
+.trn{
+    font-size: 16px;
+    padding: 5px 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid maroon;
+    color: maroon;
+}
+
+.trn:hover{
+    background-color: maroon;
+    color: white;
+}
+
+.des-par{
+    margin: 5px 20px;
+}
+
+.view-all-btn{
+    display: none;
+}
+
+/************Footer********************/
+footer{
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 300px; 
+}
+.footer-container h2{
+    font-size: 50px;
+    padding: 60px 0px 30px 0px;
+}
+
+hr{
+    opacity: 30%;
+}
+
+footer ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.social-icon{
+    margin-top: 20px;
+}
+
+.social-icon .fa-brands{
+    margin-left: 20px;
+    font-size: 20px;
+}
+/***********Footer End*************/
+
+
+/***********Mobile Device- 576px*************/
+@media screen and (max-width: 576px) {
+    
+    main{
+        width: 576px;
+    }
+    body{
+        width: 576px;
+        margin: 0 px auto;
+    }
+    .header-section{
+        width: 576px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;  
+    }
+
+    .header-img{
+        margin-top: 0px;
+    }
+    .header-img img{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .content{
+        text-align: center;
+    }
+    
+    .header-title h1{
+    font-size: 30px;
+    font-weight: 700;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .middle-section{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 125px;
+        margin-bottom: 50px;
+    }
+    .side-bar{
+        width: 300px;
+        height:300px;
+        position: relative;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .blog-section{
+        width: 290px;
+    }
+    .description{
+        margin-right: 5px;
+    }.footer-nav{
+        width:
+    }
+
+    footer ul a{
+        margin-left: 5px;
+    }
+
+    #hide-me{
+        display: none;
+    }
+    footer{
+        
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 450px; 
+    }
+
+    .footer-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/**********End Mobile Device**********/
+
+/*********** Tab  577-992px *************/
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    main{
+        width: 920px;
+        margin-right: 0px;
+    }
+    body{
+        width: 920px;
+        margin: 0px auto;
+    }
+
+    .header-section{
+        width: 920px;
+        height: auto;
+    }
+
+    .header-img img{
+        width: 300px;
+        margin-top: 115px;
+        margin-bottom: -7px;
+    }
+
+    .container{
+        width: 920px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .middle-section{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .side-bar{
+        width: 920px;
+        height: 90px;
+        background: white;
+        margin-bottom: 20px;
+    }
+
+    .side-bar ul{
+        display: flex;
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .side-bar ul a{
+        padding: 5px 10px;
+    }
+
+    .side-bar .upcoming-match{
+        padding: 10px 20px;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    
+    .side-bar .all-group{
+        padding: 10px 61px;
+        background-color: white;
+        border: 1px solid gray;
+    }
+
+    .side-bar .blog {
+        padding: 10px 85px;
+        background-color: #DD0000;
+        border: 1px solid gray;
+    }
+    .blog-section{
+        width: 290px;
+    }
+
+    #hide-me{
+        display: none;
+    }
+
+    .view-all-btn{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .view-all button{
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #DD0000;
+        color: white;
+    }
+
+    .view-all{
+        display: flex;
+        justify-content: center;
+        margin-left: 300px;
+    }
+
+}
